@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Fake News Detector",
+    "version": "1.0",
+    "description": "Classify fake news using Keywords attention PU-LP with very few fake news samples.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Fake News Detector"
+    },
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "host_permissions": [
+      "http://192.168.1.4:5555/*"
+    ]
+}
+  

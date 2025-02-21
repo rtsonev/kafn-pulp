@@ -13,7 +13,7 @@
         "128": "assets/icon128.png"
     },
     "host_permissions": [
-      "http://192.168.1.4:5555/*"
+      "http://127.0.0.1:5555/*"
     ]
 }
   

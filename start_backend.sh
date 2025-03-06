@@ -12,7 +12,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 echo "=== Installing dependecies ==="
-pip --quiet install numpy pandas nltk yake torch scikit-learn gensim networkx torch-geometric flask
+pip --quiet install numpy pandas nltk yake torch scikit-learn gensim networkx torch-geometric flask gunicorn
 
 echo "=== Starting app ==="
-python3 backend/src/app.py
+gunicorn -c backend/src/gunicorn-config.py backend.src.app:app

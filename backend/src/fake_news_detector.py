@@ -5,8 +5,8 @@ import torch
 import pickle
 import joblib
 
-from model_config import ModelConfig
-from hetero_gat import HeteroGAT, nx_to_heterodata_full
+from backend.src.model_config import ModelConfig
+from backend.src.hetero_gat import HeteroGAT, nx_to_heterodata_full
 from gensim.models import Doc2Vec
 from typing import List, Tuple
 

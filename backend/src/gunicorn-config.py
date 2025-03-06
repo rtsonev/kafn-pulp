@@ -1,0 +1,9 @@
+workers = 1
+threads = 8
+bind = "0.0.0.0:5555"
+timeout = 7000
+loglevel = "info"
+accesslog = "-"
+errorlog = "-"
+keyfile = "backend/cert/key.pem" # Certificates are self signed, for testing purposes only
+certfile = "backend/cert/cert.pem" 

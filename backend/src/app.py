@@ -1,10 +1,16 @@
 from flask import Flask, request, jsonify
-from util import preprocess
-from fake_news_detector import FakeNewsDetector
+from backend.src.util import preprocess
+from backend.src.fake_news_detector import FakeNewsDetector
 
 
 app = Flask(__name__)
 
+@app.route("/", methods=["GET"])
+def home():
+    return (
+        jsonify({"ping": "pong"}),
+        200,
+    )
 
 @app.route("/predict", methods=["POST"])
 def predict():

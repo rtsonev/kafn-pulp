@@ -32,7 +32,7 @@ getPrediction = async (text) => {
     /**
      * Get prediction of a text from API
      */
-    const response = await fetch("http://127.0.0.1:5555/predict", { 
+    const response = await fetch("https://127.0.0.1:5555/predict", { 
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: text })
